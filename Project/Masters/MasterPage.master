@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="cssLinks" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <img src="../images/winesWishLogo.PNG" />
+    </div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:SiteMapDataSource ID="navigationSource" runat="server" StartingNodeUrl="~/home.aspx" />
+        <asp:Menu ID="navigationMenu" runat="server" DataSourceID="navigationSource" Orientation="Horizontal"
+             StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False" StaticMenuItemStyle-HorizontalPadding="10"></asp:Menu>
+            <br /><br />
+         <asp:ContentPlaceHolder id="mainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
