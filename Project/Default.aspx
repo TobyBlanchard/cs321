@@ -25,8 +25,27 @@
             <asp:Button ID="enterSite" runat="server" Text="Enter Site" OnClick="enterSite_Click" PostBackUrl="~/home.aspx" Visible="False" />
        
             <fieldset>
+<<<<<<< HEAD
             <legend>If already a member</legend>            
                 <asp:Login ID="loginHome" runat="server" DisplayRememberMe="false"></asp:Login>        
+=======
+            <legend>Log In OR <a href="register.aspx">Register</a></legend>
+            <asp:LoginView ID="lvHome" runat="server">
+            <AnonymousTemplate>
+                <asp:Login ID="loginHome" runat="server" DisplayRememberMe="false"></asp:Login>
+            </AnonymousTemplate>
+             <RoleGroups>
+                <asp:RoleGroup Roles="Members">
+                    <ContentTemplate>
+                        <p>Member Info:</p>
+                        <a href="ManageUsers.aspx">Manage Users</a><br />
+                        <a href="ManageRoles.aspx">Manage Roles</a>
+                        
+                    </ContentTemplate>
+                </asp:RoleGroup>
+            </RoleGroups>
+            </asp:LoginView>
+>>>>>>> 8c170ebec9e33d1c79a45c9e0e16a18a38c83f48
             </fieldset>
             </form>
     </div>

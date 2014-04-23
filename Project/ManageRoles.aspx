@@ -7,3 +7,18 @@
         <asp:Button ID="CreateRoleButton" runat="server" Text="Create Role" OnClick="CreateRoleButton_Click"/>
 </asp:Content>
 
+<<<<<<< HEAD
+=======
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <p> GITHUB SUCKS!</p>
+    </div>
+    </form>
+</body>
+</html>
+>>>>>>> 8c170ebec9e33d1c79a45c9e0e16a18a38c83f48
