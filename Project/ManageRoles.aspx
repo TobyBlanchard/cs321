@@ -1,16 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ManageRoles.aspx.cs" Inherits="ManageRoles" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/MasterPage.master" AutoEventWireup="true" CodeFile="ManageRoles.aspx.cs" Inherits="ManageRoles" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="cssLinks" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainContent" Runat="Server">
+        <b>Create a New Role:</b> <asp:TextBox ID="RoleName" runat="server"></asp:TextBox> <br/>
+        <asp:Button ID="CreateRoleButton" runat="server" Text="Create Role" OnClick="CreateRoleButton_Click"/>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
-</html>
