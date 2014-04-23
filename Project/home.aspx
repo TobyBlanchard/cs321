@@ -8,6 +8,19 @@
         <h1>Welcome to Wines Wish!</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu nulla non ante aliquam aliquet eget at elit. Praesent quis dui vel nibh pretium dictum ac pretium ligula. Nulla tempus eu eros ac elementum. Praesent consequat massa ac est egestas, sed aliquam sem iaculis. Pellentesque nec eros non nisi gravida porta sit amet vel tortor. Etiam pulvinar mauris quis ligula rutrum commodo. Cras dui enim, varius nec diam nec, porttitor pharetra sem. </p>
         <br />
+        <asp:LoginView ID="lvHome" runat="server">
+        <AnonymousTemplate>
+               <!-- <asp:Login ID="loginHome" runat="server" DisplayRememberMe="false"></asp:Login>-->
+            </AnonymousTemplate>
+             <RoleGroups>
+                <asp:RoleGroup Roles="Members">
+                    <ContentTemplate>
+                        <p>Member Info:</p>
+                        <a href="accounts.aspx">My Account</a><br />                        
+                    </ContentTemplate>
+                </asp:RoleGroup>
+            </RoleGroups>
+         </asp:LoginView>   
     </div> 
 </asp:Content>
 
