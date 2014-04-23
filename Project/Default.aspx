@@ -25,8 +25,8 @@
             <asp:Button ID="enterSite" runat="server" Text="Enter Site" OnClick="enterSite_Click" PostBackUrl="~/home.aspx" Visible="False" />
        
             <fieldset>
-            <legend>If already a member</legend>
-             <asp:LoginView ID="lvHome" runat="server">
+            <legend>Log In OR <a href="register.aspx">Register</a></legend>
+            <asp:LoginView ID="lvHome" runat="server">
             <AnonymousTemplate>
                 <asp:Login ID="loginHome" runat="server" DisplayRememberMe="false"></asp:Login>
             </AnonymousTemplate>
